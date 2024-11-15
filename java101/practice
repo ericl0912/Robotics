@@ -1,0 +1,36 @@
+//number 1
+public class Practice {
+  public static void main(String[] args) {
+        int[] arr={1,2,3,4,5,1,2,3,4,2,2};
+       int n = 2;
+        System.out.println(countOccurrences(arr,n));
+    }
+
+    public static int countOccurrences(int[] arr, int n) {
+        int count = 0;
+        for (int number : arr) {
+            if (number == n) {
+                count++;
+            }
+       }
+        return count;
+    }
+}
+//number 2
+public class Practice {
+    public static void main(String[] args){
+        int[] arr={1,2,3};
+        int[] reverseArr= reverseArray(arr);
+        for(int num:reverseArr){
+        System.out.print(num);
+        }
+      
+}
+public static int[] reverseArray(int[] arr){
+   int[] reverse=new int[arr.length];
+   for(int i=0; i<arr.length;i++){
+       reverse[i]= arr[arr.length-1-i];
+
+    }
+    return reverse;
+}
