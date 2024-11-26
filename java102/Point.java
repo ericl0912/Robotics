@@ -20,7 +20,7 @@ public class Point {
         return y;
     }
 
-    // Static method to calculate the center of mass
+    
     public static Point centerOfMass(Point[] points) {
         if (points == null || points.length == 0) {
             throw new IllegalArgumentException("The array of points must not be null or empty.");
@@ -44,7 +44,7 @@ public class Point {
     }
 
    
-    @Override
+
     public String toString() {
         return "(" + x + ", " + y + ")";
     }
