@@ -1,14 +1,11 @@
 package java102;
 
 public class Main {
-    public static void main(String[] args) {
-        Point[] points = {
-            new Point(1, 1),
-            new Point(2, 2),
-            new Point(3, 3)
-        };
-
-        Point center = Point.centerOfMass(points);
-        System.out.println("Center of mass: " + center);  
+    static double sumArea(Shape[] shapes) {
+        double sum = 0;
+        for (Shape shape : shapes) {
+            sum += shape.area();
+        }
+        return sum;
     }
 }
